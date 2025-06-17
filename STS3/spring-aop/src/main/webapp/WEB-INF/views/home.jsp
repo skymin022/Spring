@@ -1,14 +1,18 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<% 
+	String root = request.getContextPath();
+	pageContext.setAttribute("root",root);
+%>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+<meta charset="UTF-8">
+<title>메인화면</title>
 </head>
 <body>
-<h1>
-	Hello world!  
-</h1>
-
-<P>  The time on the server is ${serverTime}. </P>
+	<h1>Spring x MyBatis</h1>
+	<h3>게시판 프로젝트</h3>
+	<a href="${ root }/board/list">게시판 </a>
 </body>
 </html>
