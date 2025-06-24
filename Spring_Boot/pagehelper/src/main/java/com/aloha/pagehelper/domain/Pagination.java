@@ -1,4 +1,4 @@
-package com.aloha.page.domain;
+package com.aloha.pagehelper.domain;
 
 import lombok.Data;
 
