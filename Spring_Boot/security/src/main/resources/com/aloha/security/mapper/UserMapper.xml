@@ -1,0 +1,25 @@
+# mapper.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace="매퍼 인터페이스 경로" --> 
+<mapper namespace="com.aloha.security.mapper.UserMapper">
+
+    <!-- 회원가입 -->
+    <insert id="join">
+        INSERT INTO user (username, password, name, email )
+        VALUSE ( #{username}, #{password}, #{name}, #{email} )
+    </insert>
+
+    <!-- 회원 권한 등록 -->
+    <insert id="insertAuth">
+        INSERT INTO user (username, auth )
+        VALUSE ( #{username}, #{auth} )
+    </insert>
+
+
+
+</mapper>
