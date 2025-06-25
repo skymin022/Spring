@@ -14,6 +14,7 @@ public class Users {
     private String email;
     private Date createdAt;
     private Date updatedAt;
-
+    private int enabled;
+    
     private List<UserAuth> authList;
 }
